@@ -48,6 +48,7 @@ aliases:
     - subdistrict    
     - subdivision
     - ward
+    - okrug
 ---
 name: postal_city    
 ---
@@ -67,6 +68,8 @@ aliases:
     - department
 ---
 name: state_district
+aliases:
+    - raion
 ---
 name: postcode
 aliases:
@@ -77,11 +80,9 @@ name: state
 aliases:
     - province
     - state_code
+    - oblast
 ---
 name: region
-aliases:
-    - oblast
-    - raion
 ---
 name: island
 ---

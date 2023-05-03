@@ -1716,16 +1716,17 @@ RO:
 RS:
     address_template: *generic1
 
-# Russia
+# Russia -- https://en.wikipedia.org/wiki/Address#Russia
 RU:
-    address_template: *generic10
-    fallback_template: |
+    address_template: |
         {{{attention}}}
         {{{house}}}
-        {{{road}}} {{{house_number}}}
-        {{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} || {{{island}}} || {{{village}}} || {{{hamlet}}} {{/first}}
-        {{#first}} {{{city}}} || {{{town}}} || {{{municipality}}} {{/first}}
-        {{#first}} {{{county}}} || {{{state_district}}} || {{{state}}} {{/first}}
+        {{{road}}}, {{{house_number}}}
+        {{#first}} {{{suburb}}} || {{{city_district}}} || {{{neighbourhood}}} {{/first}}
+        {{#first}} {{{village}}} || {{{hamlet}}} || {{{city}}} || {{{town}}} || {{{municipality}}} {{/first}}
+        {{#first}} {{{county}}} || {{{state_district}}} || {{{island}}} {{/first}}
+        {{#first}} {{{state}}} || {{{region}}} {{/first}}
+        {{{postcode}}}
         {{{country}}}
 
 # Rwanda

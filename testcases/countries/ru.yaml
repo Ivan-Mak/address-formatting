@@ -2,51 +2,53 @@
 # Russia
 description: cafe near 59.9313605,30.3175201
 components:
-    cafe : Efes Istambul
-    city : Сенной округ
-    house_number : 23
-    postcode : 190000
-    road : Гороховая улица
+    cafe: Efes Istambul
+    okrug: Сенной округ
     # Saint Petersburg
-    state : Санкт-Петербург 
-    state_district : Адмиралтейский район
+    city: Санкт-Петербург 
+    house_number: 23
+    postcode: 190000
+    road: Гороховая улица
+    raion: Адмиралтейский район
+    oblast: Ленинградская о́бласть
     # Russian Federation
-    country : Российская Федерация 
-    country_code : ru
+    country: Российская Федерация 
+    country_code: ru
 expected:  |
     Efes Istambul
-    Гороховая улица 23
+    Гороховая улица, 23
     Сенной округ
     Санкт-Петербург
-    Российская Федерация
+    Адмиралтейский район
+    Ленинградская о́бласть
     190000
+    Российская Федерация
 ---
 description: village 55.8931701, 63.7019487
 components:
-    city : Батуринский сельсовет
-    country : Россия
-    country_code : ru
-    county : Шадринский район
-    hamlet : Камчатка
-    state : Курганская область
+    oblast: Курга́нская о́бласть 3
+    country: Россия 4
+    country_code: ru
+    raion: Шадринский район 2
+    village: Камчатка 1
 expected:  |
-    Камчатка
-    Батуринский сельсовет
-    Шадринский район
-    Россия
+    Камчатка 1
+    Шадринский район 2
+    Курга́нская о́бласть 3
+    Россия 4
 ---
 # island
-description: use island name
+description: cafe near 71.5388337,52.3258756
 components:
-    city : Малиновараккское сельское поселение
-    country : Россия
-    country_code : ru
-    county : Лоухский район
-    island : Ярославль
-    state : Республика Карелия
+    cafe: Причал 1
+    city: СтолбоБелушья Губавой 2
+    country: Россия 5
+    country_code: ru
+    oblast: Арха́нгельская о́бласть 4
+    island: Се́верный о́стров 3
 expected:  |
-    Ярославль
-    Малиновараккское сельское поселение
-    Лоухский район
-    Россия
-
+    Причал 1
+    СтолбоБелушья Губавой 2
+    Се́верный о́стров 3
+    Арха́нгельская о́бласть 4
+    Россия 5
