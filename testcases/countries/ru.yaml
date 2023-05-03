@@ -11,7 +11,7 @@ components:
     road: Гороховая улица
     raion: Адмиралтейский район
     oblast: Ленинградская о́бласть
-    # Russian Federation
+    # Russian Federation test
     country: Российская Федерация 
     country_code: ru
 expected:  |
